@@ -1,9 +1,13 @@
-let now = new Date()
-let formattedDate = now.toLocaleString()
-console.log(formattedDate)
+
+// console.log(formattedDate)
 
 
-let cont = document.querySelector('.date')
-cont.innerText = `${formattedDate}`
+setInterval(() => {
+    let now = new Date()
+    let formattedDate = now.toLocaleString()
+    let cont = document.querySelector('.date')
+    cont.innerText = `${formattedDate}`
+}, 1000)
+
 
 
