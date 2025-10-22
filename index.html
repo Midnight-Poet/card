@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <i class="fa-solid fa-user"></i>
+
+                </a>
+            </li>
+            <div>
+                <li>
+                    <a href="https://x.com/aMidnightPoet" data-testid="test-user-social-twitter" target="_blank"><i
+                            class="fa-brands fa-twitter" data-testid="socialLinks"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Midnight-Poet" data-testid="test-user-social-github" target="_blank"><i
+                            class="fa-brands fa-github" data-testid="socialLinks"></i></a>
+                </li>
+                <li>
+                    <a href="https://wa.me/message/SYHJ3GUHSXBBJ1" data-testid="test-user-social-whatsapp"
+                        target="_blank"><i class="fa-brands fa-whatsapp" data-testid="socialLinks"></i></a>
+                </li>
+            </div>
+
+
+            <li>
+                <a href="./contact.html">contact</a>
+            </li>
+            <li>
+                <a href="./about.html">about</a>
+            </li>
+
+
+        </ul>
+    </nav>
     <article data-testid="test-profile-card">
+        <h4 data-testid="test-user-time" class="date"></h4>
         <figure class="img">
             <img src="./walker.jpg" data-testid="test-user-avatar" alt="">
         </figure>
@@ -16,23 +58,12 @@
             <figure class="img">
                 <img src="./walker.jpg" data-testid="test-user-avatar" alt="">
             </figure>
-            <h4 data-testid="test-user-time" class="date text"></h4>
             <div class="intro">
-                <h1 data-testid="test-user-name">My name is Ibrahim Ibrahim</h1>
+                <h1 data-testid="test-user-name">Ibrahim Ibrahim</h1>
                 <p data-testid="test-user-bio">
-                    A few things about me include my love for cars and books. <br>
-                    Reading is a very interesting endeavour, it makes me experience living
-                    a different life and exciting adventures. Although fictional, it is quite
-                    engaging and very educative, it opens my mind to a vast option of imagination.
-                    I also love the concepts of poems, unlike essays poems convey emotions.
-                    Each word, each line and each rhyme conveys emotions deep enough to enchant
-                    the reader.
-                    <br>
-                    Cars on the other hand is more than just love, it's more of an obsession, 
-                    especially when German Machines are in question.
-                    <br>
-                    Unlike the above, My passion for Web development is more than a fantasical 
-                    dream, it's a goal, a career, and my future.
+                    A frontend Engineer with experience in using React javascrip, and tailwind css to
+                    deliver unique and responsive website designs, with full capability of transforming
+                    figma designs into fully responsive websites.
                 </p>
                 <section class="flex">
                     <ul data-testid="text-user-hobbies">
@@ -44,22 +75,18 @@
                         <li>eating</li>
                     </ul>
                     <ul data-testid="text-user-dislikes">
-                        <h5>And the things i hate are:</h5>
+                        <h5>And the things i dislike are:</h5>
                         <li>Electric cars</li>
                         <li>complex tasks</li>
                         <li>And hunger too</li>
                     </ul>
                 </section>
             </div>
-            <nav class="icons" >
-                <a href="https://x.com/aMidnightPoet" data-testid="test-user-social-twitter" target="_blank"><i class="fa-brands fa-twitter" data-testid="socialLinks"></i></a>
-                <a href="https://github.com/Midnight-Poet" data-testid="test-user-social-github"  target="_blank"><i class="fa-brands fa-github" data-testid="socialLinks"></i></a>
-                <a href="https://wa.me/message/SYHJ3GUHSXBBJ1" data-testid="test-user-social-whatsapp"  target="_blank"><i class="fa-brands fa-whatsapp" data-testid="socialLinks"></i></a>
-            </nav>
         </div>
     </article>
 
 
     <script src="./script.js"></script>
 </body>
+
 </html>

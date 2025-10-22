@@ -1,0 +1,232 @@
+:root {
+    --bg-clr: #e2f3f5;
+    --txt-clr: #22d1ee;
+    --border: #0e153a;
+    --div-clr: #d72323;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    padding: 20px 70px;
+    box-shadow: 0 0 5px gray;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
+
+    & ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 20px;
+
+        & div {
+            /* width: 20%; */
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+            font-size: 25px;
+            gap: 20px;
+            margin-right: auto;
+
+            & a {
+
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        &>li {
+            font-size: 20px;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+            text-transform: capitalize;
+            border: 2px solid transparent;
+
+            
+            &.active, &:hover {
+                border-bottom: 2px solid black;
+            }
+
+            & a {
+                text-decoration: none;
+                color: black;
+            }
+
+            &:first-child {
+                font-size: 25px;
+                padding: 5px;
+                height: 45px;
+                width: 45px;
+                border-radius: 100%;
+                text-align: center;
+                background-color: gray;
+                color: white;
+                margin-right: auto;
+
+                & a {
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: black;
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding: 30px 70px;
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    & section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+
+        & div {
+            width: 65%;
+            height: max-content;
+            padding: 15px;
+            border-radius: 15px;
+
+            box-shadow: 0 0 10px rgb(250, 241, 139);
+            background-color: rgba(255, 251, 202, 0.273);
+
+            & h1 {
+                margin-bottom: 20px;
+                font-size: 45px;
+                text-transform: capitalize;
+            }
+
+            & h3 {
+                text-transform: capitalize;
+                font-size: 20px;
+                margin: 20px 0;
+            }
+
+            & ul {
+                padding: 20px;
+            }
+
+            & p {
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+
+        /* &:first-child { */
+        /* } */
+        &:nth-of-type(even) {
+            display: flex;
+            justify-content: flex-end;
+
+            & div {
+                background-color: rgba(189, 236, 255, 0.419);
+                box-shadow: 0 0 10px rgb(189, 236, 255);
+            }
+
+        }
+
+        &:nth-child(3) {
+            & ul {
+                font-size: 20px;
+                text-transform: capitalize;
+
+                & li {
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+.stages {
+    position: fixed;
+    top: 20%;
+    right: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+
+    & div {
+        height: 40px;
+        width: 40px;
+        border: 1px solid gray;
+        background-color: gray;
+        border-radius: 100%;
+        font-size: 18px;
+        text-align: center;
+        align-content: center;
+        color: white;
+        margin-top: 30px;
+        transition: .5s ease-in-out;
+
+        &.active {
+            background-color: white;
+            color: gray;
+        }
+    }
+
+    & hr {
+        position: absolute;
+        height: 90%;
+        width: 3px;
+        z-index: -1;
+        top: 30px;
+        background-color: gray;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        padding: 20px 30px;
+    }
+    main {
+        padding: 20px 30px;
+        width: 100%;
+
+        & section {
+            height: max-content;
+            margin-bottom: 40vh;
+
+            & div {
+                width: 100%;
+
+                & h1 {
+                    font-size: calc(45px - 30%);
+                }
+            }
+
+            & h1 {
+                font-size: calc();
+            }
+        }
+    }
+
+    .stages {
+        right: 1%;
+        & hr {
+            /* top: 5%;
+            height: 35%; */
+        }
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <i class="fa-solid fa-user"></i>
+
+                </a>
+            </li>
+            <div>
+                <li>
+                    <a href="https://x.com/aMidnightPoet" data-testid="test-user-social-twitter" target="_blank"><i
+                            class="fa-brands fa-twitter" data-testid="socialLinks"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Midnight-Poet" data-testid="test-user-social-github" target="_blank"><i
+                            class="fa-brands fa-github" data-testid="socialLinks"></i></a>
+                </li>
+                <li>
+                    <a href="https://wa.me/message/SYHJ3GUHSXBBJ1" data-testid="test-user-social-whatsapp"
+                        target="_blank"><i class="fa-brands fa-whatsapp" data-testid="socialLinks"></i></a>
+                </li>
+            </div>
+
+
+            <li class="active">
+                <a href="./contact.html">contact</a>
+            </li>
+            <li>
+                <a href="./about.html">about</a>
+            </li>
+        </ul>
+    </nav>
+    <form id="contact-form" novalidate>
+        <h2>Contact Us</h2>
+
+        <div class="form-group">
+            <input id="name" type="text" required  placeholder="" data-testid="test-contact-name" aria-describedby="test-contact-error-name">
+            <label for="name">Full Name</label>
+            <p id="test-contact-error-name" data-testid="test-contact-error-name" class="error-message"></p>
+        </div>
+
+        <div class="form-group">
+            <input id="email" type="email"  required data-testid="test-contact-email" placeholder="" aria-describedby="test-contact-error-email">
+            <label for="email">Email</label>
+            <p id="test-contact-error-email" data-testid="test-contact-error-email" class="error-message"></p>
+        </div>
+
+        <div class="form-group">
+            <input id="subject" type="text" required  placeholder="" data-testid="test-contact-subject"
+                aria-describedby="test-contact-error-subject">
+            <label for="subject">Subject</label>
+            <p id="test-contact-error-subject" data-testid="test-contact-error-subject" class="error-message"></p>
+        </div>
+
+        <div class="form-group">
+            <textarea id="message" rows="4" data-testid="test-contact-message"
+                aria-describedby="test-contact-error-message"></textarea>
+            <label for="message">Message</label>
+            <p id="test-contact-error-message" data-testid="test-contact-error-message" class="error-message"></p>
+        </div>
+
+        <button type="submit" data-testid="test-contact-submit">Send Message</button>
+
+        <div id="test-contact-success" data-testid="test-contact-success" aria-live="polite">
+            Thanks for reaching out! We’ll get back to you soon.
+        </div>
+    </form>
+
+    <script src="script3.js">
+    </script>
+</body>
+
+</html>
