@@ -224,9 +224,5 @@ main {
 
     .stages {
         right: 1%;
-        & hr {
-            /* top: 5%;
-            height: 35%; */
-        }
     }
 }
